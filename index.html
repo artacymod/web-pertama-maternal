@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML Layout dan CSS</title>
+    <link rel="stylesheet" href="stylelayout.css" />
+  </head>
+     <!-- Nama: Ilyas Nur Rohman (24.12.3203) -->
+  <body>
+    <!-- membuat kotak header -->
+    <header class="header">
+      <h1>Maternal Disaster</h1>
+      <h4>Praktikum Pertemuan 4 - CSS Layout</h4>
+      <img src="picture/maternal6.png" alt="Cinque Terre"
+      width="100px" height="100px"/>
+    </header>
+    <!-- membuat kotak navigasi -->
+    <nav class="topnav">
+      <a href="https://www.maternaldisaster.com/">Home</a>
+      <a href="https://www.maternaldisaster.com/store/">Store</a>
+      <a href="https://www.maternaldisaster.com/contact-us/">Contact Us</a>
+      <a href="https://www.maternaldisaster.com/my-account/" style="float: right">Login</a>
+    </nav>
+
+    <!-- membagi halaman menjadi 3 bagian -->
+    <main class="row">
+      <aside class="leftcolumn">
+        <section class="card">
+          <h2>Market Place Online</h2>
+          <ul>
+            <li><a href="https://www.maternaldisaster.com/shop/">Maternal Shop</a></li>
+            <li><a href="https://shopee.co.id/maternaldisasterofficial">Shopee</a></li>
+            <li><a href="https://www.tokopedia.com/maternalstore">Toko Pedia</a></li>
+          </ul>
+        </section>
+      </aside>
+
+      <section class="middlecolumn">
+        <article class="card">
+          <h2>MATERNAL DISASTER</h2>
+          <h5>New Product, 19 April, 2025</h5>
+          <img
+          src="picture/maternal1.png"
+          alt="Cinque Terre"
+          width="100%" />
+          <p id="card-header"> Maternal_Disaster.</p>
+          <p>
+            Our newest release "METAL SPECTRAL" now available in both digital and physical form. 
+            Come visit us at one of our stores in Bandung, Malang, Medan, Yogyakarta, Semarang, Bintaro, Denpasar, Palembang, Makassar, 
+            our stores eagerly await your arrival. And for those who prefer to shop from the comfort of their own homes, fear not, 
+            for the link in our bio will lead you to the coveted treasure. 
+            #maternaldisaster #metalspectral
+          </p>
+        </article>
+           <!-- Nama: Ilyas Nur Rohman (24.12.3203) -->
+        <section class="row">
+          <figure class="gallery">
+            <a target="_blank" href="https://www.maternaldisaster.com/collaboration/maternal-disaster-x-miracle-mates/">
+              <img
+                src="picture/maternal3.png"
+                alt="Cinque Terre"
+                width="800"
+                height="400"
+              />
+            </a>
+            <figcaption class="desc">
+              MATERNAL DISASTER X MIRACLE MATES
+            </figcaption>
+          </figure>
+             
+          <figure class="gallery">
+            <a target="_blank" href="https://www.maternaldisaster.com/lookbook/maternal-footwear-delivery-7/">
+              <img
+                src="picture/maternal2.png"
+                alt="Cinque Terre"
+                width="600"
+                height="400"
+              />
+            </a>
+            <figcaption class="desc">
+              MATERNAL FOOTWEAR
+            </figcaption>
+          </figure>
+
+          <figure class="gallery">
+            <a target="_blank" href="https://www.maternaldisaster.com/collaboration/maternal-disaster-x-forever-young-crew/">
+              <img
+                src="picture/maternal4.png"
+                alt="Cinque Terre"
+                width="600"
+                height="400"
+              />
+            </a>
+            <figcaption class="desc">
+              MATERNAL DISASTER X FOREVER YOUNG CREW
+            </figcaption>
+          </figure>
+        </section>
+      </section>
+
+      <aside class="rightcolumn">
+        <section class="card">
+          <h2>About Us</h2>
+          <img
+          src="picture/maternal5.png"
+          alt="Cinque Terre"
+          width="100%"
+          height="100%"/>
+          <p>
+            Maternal Disaster is a gripping and unconventional clothing brand based in Bandung since 2003.
+            Represents not only a more refined and forward-thinking brand, we reflect our each issues 
+            like a musical albums and every articles is like a song we write.
+            <div>
+            Driven by the dream-quest of demon force that bore black mass hysteria, a carnal beast, 
+            living in a cosmos that is indifferent to our existence.
+            Maternal Disaster is dangerous flame of brand that seemed lost for many years and that now once again
+            has been set loose upon everyday society & to decipher the world objectively.
+          </p>
+        </section>
+      </aside>
+    </main>
+
+    <!-- membuat kotak berisi teks -->
+    <section class="kotak">
+      Kotak ini menggunakan Box Model, yang diatur outer, margin, border,
+      padding dan contentnya. Cek class kotak pada css
+    </section>
+
+    <footer class="footer">
+      <p id="tebel">&copy;2025 ILYAS NUR ROHMAN - 24.12.3203</p>
+    <P>(FOOTER)</P>
+    </footer>
+  </body>
+</html>

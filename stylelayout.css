@@ -1,0 +1,163 @@
+/* Style element */
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+header {
+  padding: 30px;
+  text-align: center;
+  background: black;
+  color: white;
+}
+/* Ilyas Nur Rohman (24.12.3203) */
+header h1 {
+  font-size: 50px;
+  color: rgb(255, 0, 0);
+}
+
+/* Style the top navigation bar */
+nav {
+  overflow: hidden;
+  background-color: grey;
+}
+
+/* Style the nav links */
+nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #c20000;
+  color: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+aside.leftcolumn {
+  float: left;
+  width: 25%;
+  padding-right: 10px;
+}
+
+/* Middle column */
+section.middlecolumn {
+  float: left;
+  width: 50%;
+}
+
+/* Right column */
+aside.rightcolumn {
+  float: right;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+.card #card-header {
+  font-weight: bold;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+footer #tebel {
+  font-weight: bolder;
+}
+
+/* Image gallery */
+figure.gallery {
+  margin: 10px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 30%;
+}
+
+figure.gallery:hover {
+  border-color: #777;
+}
+
+figure.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+figcaption.desc {
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Style class kotak */
+.kotak {
+  width: 100%;
+  padding: 10px;
+  border: 5px dashed purple;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Media query */
+@media screen and (max-width: 800px) {
+  nav a {
+    float: none;
+    width: 100%;
+  }
+
+  aside.leftcolumn,
+  aside.rightcolumn, section.middlecolumn {
+    float: none;
+    width: 100%;
+  }
+}
